@@ -1,0 +1,38 @@
+[
+  {
+    "id": "fb_demo_01",
+    "item_id": "res_ckks_02",
+    "item_type": "resource",
+    "title": "Practical Homomorphic Encryption with CKKS in Python",
+    "category": "learning-materials",
+    "feedback": "useful",
+    "timestamp": "2026-11-21T13:35:45.687012"
+  },
+  {
+    "id": "fb_5e49c4afa7",
+    "item_id": "res_crypto_01",
+    "item_type": "resource",
+    "title": "CS301 Cryptography",
+    "category": "study-materials",
+    "feedback": "useful",
+    "timestamp": "2026-11-21T13:40:00.733383"
+  },
+  {
+    "id": "fb_70d9556fe6",
+    "item_id": "res_crypto_01",
+    "item_type": "resource",
+    "title": "CS301 Cryptography",
+    "category": "study-materials",
+    "feedback": "useful",
+    "timestamp": "2026-11-21T13:57:31.174782"
+  },
+  {
+    "id": "fb_bde6b28625",
+    "item_id": "res_crypto_01",
+    "item_type": "resource",
+    "title": "CS301 Cryptography",
+    "category": "study-materials",
+    "feedback": "useful",
+    "timestamp": "2026-11-27T05:36:45.014698"
+  }
+]

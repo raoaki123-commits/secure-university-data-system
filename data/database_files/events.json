@@ -1,0 +1,94 @@
+[
+  {
+    "id": "evt_hack_01",
+    "_id": "evt_hack_01",
+    "title": "SovereignHacks 2026: Privacy-Preserving Computing Hackathon",
+    "description": "36-hour collegiate hackathon focused on Zero-Knowledge systems, homomorphic encryption, and Community SDG challenges.",
+    "category": "Hackathon",
+    "department_or_host": "ACM Student Chapter & Cyber Institute",
+    "date": "2026-11-28",
+    "time": "09:00 - 21:00 EST",
+    "location": "Turing Center for Computational Innovation",
+    "is_virtual": false,
+    "registration_required": true,
+    "registration_deadline": "2026-11-25",
+    "tags": [
+      "Hackathon",
+      "SDG",
+      "Cryptography",
+      "Cash Prizes"
+    ],
+    "attendees_count": 240,
+    "status": "Approved",
+    "created_at": "2026-11-21T13:35:45.687012"
+  },
+  {
+    "id": "evt_colloq_02",
+    "_id": "evt_colloq_02",
+    "title": "Distinguished Lecture: Frontiers of Fully Homomorphic Encryption",
+    "description": "Keynote by Prof. Shafi Goldwasser on lattice-based cryptography, bootstrapping acceleration, and privacy in consumer AI.",
+    "category": "Guest Lecture",
+    "department_or_host": "Department of Computer Science",
+    "date": "2026-12-02",
+    "time": "16:00 - 17:30 EST",
+    "location": "Von Neumann Hall Auditorium & Zoom Stream",
+    "is_virtual": true,
+    "registration_required": false,
+    "registration_deadline": "2026-12-01",
+    "tags": [
+      "Lecture",
+      "Lattice Cryptography",
+      "FHE",
+      "Distinguished Speaker"
+    ],
+    "attendees_count": 380,
+    "status": "Approved",
+    "created_at": "2026-11-21T13:35:45.687012"
+  },
+  {
+    "id": "evt_career_03",
+    "_id": "evt_career_03",
+    "title": "STEM Career Expo & Technical Interview Practicum",
+    "description": "Over 50 university industry partners recruiting for co-ops, internships, and full-time software and research positions.",
+    "category": "Career Fair",
+    "department_or_host": "University Career Center",
+    "date": "2026-12-05",
+    "time": "10:00 - 16:00 EST",
+    "location": "University Grand Pavilion, Level 2",
+    "is_virtual": false,
+    "registration_required": true,
+    "registration_deadline": "2026-12-03",
+    "tags": [
+      "Career Fair",
+      "Internships",
+      "Networking",
+      "Industry"
+    ],
+    "attendees_count": 850,
+    "status": "Approved",
+    "created_at": "2026-11-21T13:35:45.687012"
+  },
+  {
+    "id": "evt_wellness_04",
+    "_id": "evt_wellness_04",
+    "title": "Midterm Wellness & Mindfulness Study Break",
+    "description": "Certified wellness counselors offering guided relaxation, ergonomic consultations, and free healthy study nourishment.",
+    "category": "Workshop",
+    "department_or_host": "Campus Health & Psychological Services",
+    "date": "2026-11-22",
+    "time": "13:00 - 15:00 EST",
+    "location": "Student Commons Garden Terrace",
+    "is_virtual": false,
+    "registration_required": false,
+    "registration_deadline": "2026-11-22",
+    "tags": [
+      "Wellness",
+      "Mental Health",
+      "Mindfulness",
+      "Community"
+    ],
+    "attendees_count": 120,
+    "status": "Approved",
+    "created_at": "2026-11-21T13:35:45.687012"
+  }
+]

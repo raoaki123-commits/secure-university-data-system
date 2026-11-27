@@ -1,0 +1,32 @@
+# ==============================================================================
+# SECURE RESOURCE RECOMMENDATION SYSTEM - BACKEND DEPENDENCIES
+# Framework: FastAPI (Migrated from legacy Flask)
+# Database: SQLite with SQLAlchemy ORM (Migrated from MongoDB)
+# ==============================================================================
+
+# Core API Framework
+fastapi>=0.115.0
+uvicorn[standard]>=0.34.0
+pydantic>=2.10.0
+pydantic-settings>=2.7.0
+
+# Database & ORM (SQLite / Relational)
+sqlalchemy>=2.0.38
+
+# Authentication & Password Hashing
+pyjwt>=2.10.0
+bcrypt>=4.3.0
+argon2-cffi>=23.1.0
+python-dotenv>=1.0.0
+
+# Testing & Client
+pytest>=8.3.0
+httpx>=0.28.0
+
+# Optional / Advanced Production Cryptography & ML Serving:
+# tenseal>=0.3.14         # Microsoft SEAL C++ CKKS wrapper (has fallback simulation)
+# tensorflow>=2.16.0      # NeuMF Deep Learning model (has baseline heuristic fallback)
+
+# Legacy compatibility packages (kept for backward compatibility reference)
+# flask>=3.1.0
+# pymongo>=4.20.0

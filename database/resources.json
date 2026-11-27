@@ -1,0 +1,178 @@
+[
+  {
+    "id": "res_crypto_01",
+    "_id": "res_crypto_01",
+    "title": "CS301: Cryptography & Network Security Course Notes",
+    "description": "Comprehensive institutional lecture notes covering AES-256, RSA key exchange, discrete logarithms, and zero-knowledge proofs.",
+    "category": "study-materials",
+    "department": "Computer Science",
+    "author_or_source": "Prof. Aris Thorne",
+    "tags": [
+      "Cryptography",
+      "Zero-Knowledge",
+      "Network Security",
+      "Algorithms"
+    ],
+    "format": "PDF Document",
+    "access_level": "University Accredited",
+    "rating": 4.9,
+    "saves_count": 85,
+    "url": "https://cs.university.edu/courses/cs301/notes.pdf",
+    "status": "Approved",
+    "created_at": "2026-11-21T13:35:45.687012"
+  },
+  {
+    "id": "res_ckks_02",
+    "_id": "res_ckks_02",
+    "title": "Practical Homomorphic Encryption with CKKS in Python",
+    "description": "Step-by-step tutorial on polynomial arithmetic, encoding floating-point vectors, scaling, and rescale operations in Pyfhel / TenSEAL.",
+    "category": "learning-materials",
+    "department": "Computer Science",
+    "author_or_source": "Sovereign Systems Lab",
+    "tags": [
+      "CKKS",
+      "Homomorphic Encryption",
+      "TenSEAL",
+      "Python"
+    ],
+    "format": "Jupyter Notebook",
+    "access_level": "University Accredited",
+    "rating": 4.8,
+    "saves_count": 126,
+    "url": "https://github.com/university/ckks-hands-on-tutorial",
+    "status": "Approved",
+    "created_at": "2026-11-21T13:35:45.687012"
+  },
+  {
+    "id": "res_lin_alg_03",
+    "_id": "res_lin_alg_03",
+    "title": "Linear Algebra for Machine Learning: SVD & Eigendecomposition",
+    "description": "Rigorous mathematical reference on singular value decomposition, low-rank approximations, and spectral graph theory.",
+    "category": "study-materials",
+    "department": "Mathematics",
+    "author_or_source": "Dr. Elena Rostova",
+    "tags": [
+      "Mathematics",
+      "Linear Algebra",
+      "SVD",
+      "Optimization"
+    ],
+    "format": "Interactive Reference",
+    "access_level": "Public",
+    "rating": 4.7,
+    "saves_count": 62,
+    "url": "https://math.university.edu/refs/linear-algebra-ml.pdf",
+    "status": "Approved",
+    "created_at": "2026-11-21T13:35:45.687012"
+  },
+  {
+    "id": "res_research_04",
+    "_id": "res_research_04",
+    "title": "IEEE Preprint: Multi-Party Private Recommendation Protocols",
+    "description": "Peer-reviewed analysis comparing Yao's Garbled Circuits, GMW protocol, and Homomorphic Encryption for high-throughput collaborative filtering.",
+    "category": "research-resources",
+    "department": "Computer Science",
+    "author_or_source": "Cybersecurity & Privacy Institute",
+    "tags": [
+      "Research Paper",
+      "MPC",
+      "Recommendation Systems",
+      "Privacy"
+    ],
+    "format": "PDF Document",
+    "access_level": "University Accredited",
+    "rating": 4.95,
+    "saves_count": 93,
+    "url": "https://arxiv.org/abs/2602.08819",
+    "status": "Approved",
+    "created_at": "2026-11-21T13:35:45.687012"
+  },
+  {
+    "id": "res_fellowship_05",
+    "_id": "res_fellowship_05",
+    "title": "NSF Undergraduate Fellowship in Trustworthy Artificial Intelligence",
+    "description": "Competitive student grant providing $6,000 summer stipend, faculty mentorship, and high-performance computing allocations.",
+    "category": "academic-opportunities",
+    "department": "Interdisciplinary",
+    "author_or_source": "Office of Undergraduate Research",
+    "tags": [
+      "Grants",
+      "Fellowship",
+      "NSF",
+      "Undergraduate Research"
+    ],
+    "format": "Grant Application Guide",
+    "access_level": "University Accredited",
+    "rating": 4.6,
+    "saves_count": 145,
+    "url": "https://research.university.edu/grants/nsf-tai-2026",
+    "status": "Approved",
+    "created_at": "2026-11-21T13:35:45.687012"
+  },
+  {
+    "id": "res_tut_docker_06",
+    "_id": "res_tut_docker_06",
+    "title": "Containerized ML Clusters with Docker & Slurm",
+    "description": "Practical DevOps tutorial on packaging TensorFlow jobs for academic supercomputer batch execution with GPU passthrough.",
+    "category": "tutorials",
+    "department": "Electrical Engineering",
+    "author_or_source": "Campus High Performance Computing Core",
+    "tags": [
+      "DevOps",
+      "Docker",
+      "HPC",
+      "TensorFlow"
+    ],
+    "format": "Code Repository & Guide",
+    "access_level": "University Accredited",
+    "rating": 4.75,
+    "saves_count": 78,
+    "url": "https://hpc.university.edu/docs/docker-slurm-guide",
+    "status": "Approved",
+    "created_at": "2026-11-21T13:35:45.687012"
+  },
+  {
+    "id": "res_support_tutoring_07",
+    "_id": "res_support_tutoring_07",
+    "title": "Departmental Peer Tutoring Hub: Discrete Math & Proofs",
+    "description": "Weekly peer-led tutoring sessions covering induction, predicate logic, recurrence relations, and graph traversals.",
+    "category": "academic-support",
+    "department": "Mathematics",
+    "author_or_source": "Math Learning Center",
+    "tags": [
+      "Tutoring",
+      "Discrete Math",
+      "Study Groups",
+      "Peer Mentoring"
+    ],
+    "format": "Schedule & Booking",
+    "access_level": "University Accredited",
+    "rating": 4.85,
+    "saves_count": 110,
+    "url": "https://math.university.edu/tutoring/discrete",
+    "status": "Approved",
+    "created_at": "2026-11-21T13:35:45.687012"
+  },
+  {
+    "id": "res_bio_08",
+    "_id": "res_bio_08",
+    "title": "Computational Genomics & Biological Database Queries",
+    "description": "Reference manual on NCBI E-utilities, UniProt REST queries, and AlphaFold structural database integration.",
+    "category": "learning-materials",
+    "department": "Interdisciplinary",
+    "author_or_source": "Bioinformatics Group",
+    "tags": [
+      "Bioinformatics",
+      "Genomics",
+      "Databases",
+      "Python"
+    ],
+    "format": "Online Manual",
+    "access_level": "Public",
+    "rating": 4.65,
+    "saves_count": 42,
+    "url": "https://bioinfo.university.edu/handbook",
+    "status": "Approved",
+    "created_at": "2026-11-21T13:35:45.687012"
+  }
+]

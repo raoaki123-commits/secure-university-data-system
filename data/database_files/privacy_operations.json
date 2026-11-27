@@ -1,0 +1,14 @@
+[
+  {
+    "id": "priv_op_01",
+    "operation_type": "HE_KEYSTORE_INITIALIZATION",
+    "user_id": "usr_admin_04",
+    "algorithm": "CKKS 128-bit (N=8192)",
+    "parameters": {
+      "security_level": "128-bit",
+      "scale": "2^40"
+    },
+    "computation_time_ms": 12.4,
+    "timestamp": "2026-11-21T13:35:45.687012"
+  }
+]

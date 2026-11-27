@@ -1,0 +1,38 @@
+[
+  {
+    "id": "bm_demo_01",
+    "user_id": "usr_student_01",
+    "item_id": "res_crypto_01",
+    "item_type": "resource",
+    "title": "CS301: Cryptography & Network Security Course Notes",
+    "category": "study-materials",
+    "department": "Computer Science",
+    "saved_at": "2026-11-21T13:35:45.687012",
+    "metadata": {
+      "format": "PDF Document",
+      "rating": 4.9
+    }
+  },
+  {
+    "id": "bm_207035a3dd",
+    "user_id": "usr_5fec1adb7a",
+    "item_id": "res_crypto_01",
+    "item_type": "resource",
+    "title": "CS301: Cryptography & Network Security Course Notes",
+    "category": "study-materials",
+    "department": "Computer Science",
+    "saved_at": "2026-11-27T05:06:24.977554",
+    "metadata": {
+      "item_id": "res_crypto_01",
+      "item_type": "resource",
+      "title": "CS301: Cryptography & Network Security Course Notes",
+      "category": "study-materials",
+      "department": "Computer Science",
+      "format": "PDF Document",
+      "score": 0.99,
+      "explanation": "[Academic Priority] Department affinity (Computer Science) \u2022 Peer endorsed (4.9/5.0) \u2022 High community engagement",
+      "source": "Prof. Aris Thorne",
+      "url": "https://cs.university.edu/courses/cs301/notes.pdf"
+    }
+  }
+]

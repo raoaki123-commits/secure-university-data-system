@@ -1,0 +1,26 @@
+{
+  "model_version": "v1",
+  "architecture": "Hybrid NeuMF (TF 2.x) + TF-IDF Cosine Similarity",
+  "training_summary": {
+    "epochs_trained": 5,
+    "final_loss": 0.06727416068315506,
+    "final_mae": 0.21725113689899445,
+    "val_loss": 0.07794509083032608,
+    "num_users": 66,
+    "num_items": 28,
+    "num_interactions": 364
+  },
+  "evaluation_metrics": {
+    "precision@5": 0.1952,
+    "precision@10": 0.131,
+    "recall@5": 0.581,
+    "hit_rate@5": 0.8095,
+    "ndcg@5": 0.4538,
+    "recall@10": 0.7762,
+    "hit_rate@10": 0.9048,
+    "ndcg@10": 0.5275
+  },
+  "test_users_evaluated": 42,
+  "total_catalog_size": 27,
+  "status": "ready"
+}

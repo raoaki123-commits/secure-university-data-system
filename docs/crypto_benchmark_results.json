@@ -1,0 +1,126 @@
+{
+  "timestamp": "2026-11-15T15:24:02Z",
+  "security_level": "128-bit post-quantum IND-CPA",
+  "parameters": {
+    "he_scheme": "CKKS (Microsoft SEAL via TenSEAL 0.3.18)",
+    "poly_modulus_degree": 8192,
+    "coeff_mod_bit_sizes": [
+      60,
+      40,
+      40,
+      60
+    ],
+    "scaling_factor": "2^40",
+    "mpc_protocol": "3-Party Additive Secret Sharing with Beaver Triples over R",
+    "mpc_parties": 3,
+    "csprng_entropy_bits": 128
+  },
+  "he_benchmarks": {
+    "dim_8": {
+      "vector_dimension": 8,
+      "scheme": "CKKS (TenSEAL / Microsoft SEAL)",
+      "poly_modulus_degree": 8192,
+      "encryption_time_ms": 3665.969,
+      "oblivious_dot_product_time_ms": 47.912,
+      "decryption_time_ms": 16.611,
+      "ciphertext_size_bytes": 331390,
+      "expected_plaintext_dot": 3.47704,
+      "decrypted_homomorphic_dot": 3.47704,
+      "absolute_error": 3.9e-06,
+      "precision_relative_error": "0.00011%",
+      "plaintext_baseline_dot_ms": 0.010103,
+      "he_overhead_multiplier": 4742.2
+    },
+    "dim_16": {
+      "vector_dimension": 16,
+      "scheme": "CKKS (TenSEAL / Microsoft SEAL)",
+      "poly_modulus_degree": 8192,
+      "encryption_time_ms": 37.088,
+      "oblivious_dot_product_time_ms": 51.878,
+      "decryption_time_ms": 9.525,
+      "ciphertext_size_bytes": 331057,
+      "expected_plaintext_dot": 3.85787,
+      "decrypted_homomorphic_dot": 3.85787,
+      "absolute_error": 3.5e-06,
+      "precision_relative_error": "9e-05%",
+      "plaintext_baseline_dot_ms": 0.005432,
+      "he_overhead_multiplier": 9550.6
+    },
+    "dim_32": {
+      "vector_dimension": 32,
+      "scheme": "CKKS (TenSEAL / Microsoft SEAL)",
+      "poly_modulus_degree": 8192,
+      "encryption_time_ms": 32.329,
+      "oblivious_dot_product_time_ms": 61.482,
+      "decryption_time_ms": 6.363,
+      "ciphertext_size_bytes": 331101,
+      "expected_plaintext_dot": 8.47759,
+      "decrypted_homomorphic_dot": 8.47759,
+      "absolute_error": 1.8e-06,
+      "precision_relative_error": "2e-05%",
+      "plaintext_baseline_dot_ms": 0.003194,
+      "he_overhead_multiplier": 19249.8
+    },
+    "homomorphic_addition_16dim_ms": 37.906
+  },
+  "mpc_benchmarks": {
+    "dot_product_dim_8": {
+      "vector_dimension": 8,
+      "execution_time_ms": 0.521,
+      "communication_rounds": 2,
+      "network_payload_bytes": 192,
+      "numerical_precision_error": 1.32154404353102e-06,
+      "dot_product_result": 2.1165
+    },
+    "dot_product_dim_16": {
+      "vector_dimension": 16,
+      "execution_time_ms": 0.728,
+      "communication_rounds": 2,
+      "network_payload_bytes": 384,
+      "numerical_precision_error": 1.5865951699112202e-06,
+      "dot_product_result": 4.38333
+    },
+    "dot_product_dim_32": {
+      "vector_dimension": 32,
+      "execution_time_ms": 1.465,
+      "communication_rounds": 2,
+      "network_payload_bytes": 768,
+      "numerical_precision_error": 3.2535697460644997e-06,
+      "dot_product_result": 8.82468
+    },
+    "cohort_aggregation_n_5": {
+      "cohort_size": 5,
+      "execution_time_ms": 0.099,
+      "contributors_count": 5,
+      "total_shares_processed": 15,
+      "computed_mean": 3.428,
+      "expected_mean": 3.428,
+      "numerical_precision_error": 0.0
+    },
+    "cohort_aggregation_n_25": {
+      "cohort_size": 25,
+      "execution_time_ms": 0.359,
+      "contributors_count": 25,
+      "total_shares_processed": 75,
+      "computed_mean": 3.6704,
+      "expected_mean": 3.6704,
+      "numerical_precision_error": 4.440892098500626e-16
+    },
+    "cohort_aggregation_n_100": {
+      "cohort_size": 100,
+      "execution_time_ms": 0.862,
+      "contributors_count": 100,
+      "total_shares_processed": 300,
+      "computed_mean": 3.5891,
+      "expected_mean": 3.5891,
+      "numerical_precision_error": 0.0
+    }
+  },
+  "comparative_analysis": {},
+  "storage_footprint": {
+    "ckks_public_context_bytes": 35286024,
+    "ckks_public_context_base64_chars": 47048032,
+    "ciphertext_16dim_bytes": 331057,
+    "mpc_additive_share_bytes_per_value": 24
+  }
+}

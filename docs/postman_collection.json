@@ -1,0 +1,342 @@
+{
+  "info": {
+    "name": "Secure University Recommendation System API",
+    "_postman_id": "7b89f2a0-4c31-482a-9f44-sovereign-2602233",
+    "description": "Comprehensive Postman collection for testing the Secure Resource Recommendation System for University Communities (Team Code: 2602233).",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:5000",
+      "type": "string"
+    },
+    {
+      "key": "access_token",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "admin_key",
+      "value": "sovereign-admin-provision-token-26O2227",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "1. Authentication",
+      "item": [
+        {
+          "name": "Register Student",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"full_name\": \"Grace Hopper\",\n  \"email\": \"g.hopper@university.edu\",\n  \"password\": \"Compiler123!\",\n  \"confirm_password\": \"Compiler123!\",\n  \"role\": \"student\",\n  \"department\": \"Computer Science & Engineering\"\n}"
+            },
+            "url": { "raw": "{{base_url}}/api/auth/register", "host": ["{{base_url}}"], "path": ["api", "auth", "register"] }
+          }
+        },
+        {
+          "name": "Register Admin (with Provision Key)",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "X-Admin-Provision-Key", "value": "{{admin_key}}" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"full_name\": \"Lead Administrator\",\n  \"email\": \"admin.root@university.edu\",\n  \"password\": \"AdminEnclave2026!\",\n  \"confirm_password\": \"AdminEnclave2026!\",\n  \"role\": \"admin\",\n  \"department\": \"Information Technology\"\n}"
+            },
+            "url": { "raw": "{{base_url}}/api/auth/register", "host": ["{{base_url}}"], "path": ["api", "auth", "register"] }
+          }
+        },
+        {
+          "name": "Login",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "if (jsonData.tokens && jsonData.tokens.access_token) {",
+                  "    pm.collectionVariables.set('access_token', jsonData.tokens.access_token);",
+                  "}"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"g.hopper@university.edu\",\n  \"password\": \"Compiler123!\"\n}"
+            },
+            "url": { "raw": "{{base_url}}/api/auth/login", "host": ["{{base_url}}"], "path": ["api", "auth", "login"] }
+          }
+        },
+        {
+          "name": "Get Profile (/me)",
+          "request": {
+            "method": "GET",
+            "header": [
+              { "key": "Authorization", "value": "Bearer {{access_token}}" }
+            ],
+            "url": { "raw": "{{base_url}}/api/auth/me", "host": ["{{base_url}}"], "path": ["api", "auth", "me"] }
+          }
+        },
+        {
+          "name": "Logout",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Authorization", "value": "Bearer {{access_token}}" }
+            ],
+            "url": { "raw": "{{base_url}}/api/auth/logout", "host": ["{{base_url}}"], "path": ["api", "auth", "logout"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "2. Users",
+      "item": [
+        {
+          "name": "Get Users Directory",
+          "request": {
+            "method": "GET",
+            "header": [
+              { "key": "Authorization", "value": "Bearer {{access_token}}" }
+            ],
+            "url": { "raw": "{{base_url}}/api/users?limit=20&skip=0", "host": ["{{base_url}}"], "path": ["api", "users"], "query": [{"key": "limit", "value": "20"}, {"key": "skip", "value": "0"}] }
+          }
+        },
+        {
+          "name": "Get User by ID",
+          "request": {
+            "method": "GET",
+            "header": [
+              { "key": "Authorization", "value": "Bearer {{access_token}}" }
+            ],
+            "url": { "raw": "{{base_url}}/api/users/USER_ID_HERE", "host": ["{{base_url}}"], "path": ["api", "users", "USER_ID_HERE"] }
+          }
+        },
+        {
+          "name": "Update User Profile",
+          "request": {
+            "method": "PUT",
+            "header": [
+              { "key": "Authorization", "value": "Bearer {{access_token}}" },
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"department\": \"Robotics & AI\"\n}"
+            },
+            "url": { "raw": "{{base_url}}/api/users/USER_ID_HERE", "host": ["{{base_url}}"], "path": ["api", "users", "USER_ID_HERE"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "3. Academic Resources",
+      "item": [
+        {
+          "name": "List Resources",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "{{base_url}}/api/resources?category=all&sort=newest", "host": ["{{base_url}}"], "path": ["api", "resources"], "query": [{"key": "category", "value": "all"}, {"key": "sort", "value": "newest"}] }
+          }
+        },
+        {
+          "name": "Create Resource",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Authorization", "value": "Bearer {{access_token}}" },
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"title\": \"Post-Quantum Cryptography in Practice\",\n  \"description\": \"Lattice-based encryption and NIST standard algorithm implementations.\",\n  \"category\": \"Cybersecurity\",\n  \"department\": \"Computer Science & Engineering\",\n  \"format\": \"PDF\",\n  \"tags\": [\"Cryptography\", \"Security\"]\n}"
+            },
+            "url": { "raw": "{{base_url}}/api/resources", "host": ["{{base_url}}"], "path": ["api", "resources"] }
+          }
+        },
+        {
+          "name": "Get Resource Detail",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "{{base_url}}/api/resources/RESOURCE_ID_HERE", "host": ["{{base_url}}"], "path": ["api", "resources", "RESOURCE_ID_HERE"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "4. Campus Events",
+      "item": [
+        {
+          "name": "List Campus Events",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "{{base_url}}/api/events", "host": ["{{base_url}}"], "path": ["api", "events"] }
+          }
+        },
+        {
+          "name": "Create Event",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Authorization", "value": "Bearer {{access_token}}" },
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"title\": \"Differential Privacy in Healthcare Symposium\",\n  \"description\": \"Invited talk on privacy-preserving genomics.\",\n  \"category\": \"Seminars\",\n  \"date\": \"2026-12-05\",\n  \"time\": \"14:00 - 16:30\",\n  \"location\": \"Hall of Sciences Room 204\",\n  \"is_virtual\": false\n}"
+            },
+            "url": { "raw": "{{base_url}}/api/events", "host": ["{{base_url}}"], "path": ["api", "events"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "5. University Services",
+      "item": [
+        {
+          "name": "List Services",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "{{base_url}}/api/services", "host": ["{{base_url}}"], "path": ["api", "services"] }
+          }
+        },
+        {
+          "name": "Create Service",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Authorization", "value": "Bearer {{access_token}}" },
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Academic Accommodations & Accessibility Center\",\n  \"description\": \"Confidential student disability and testing support enclave.\",\n  \"category\": \"Student Support\",\n  \"confidentiality_tier\": \"Strict FERPA / ADA\",\n  \"location\": \"Center Hall Suite 100\",\n  \"is_active\": true\n}"
+            },
+            "url": { "raw": "{{base_url}}/api/services", "host": ["{{base_url}}"], "path": ["api", "services"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "6. Recommendations",
+      "item": [
+        {
+          "name": "Get Personalized Recommendations",
+          "request": {
+            "method": "GET",
+            "header": [
+              { "key": "Authorization", "value": "Bearer {{access_token}}" }
+            ],
+            "url": { "raw": "{{base_url}}/api/recommendations?limit=10", "host": ["{{base_url}}"], "path": ["api", "recommendations"], "query": [{"key": "limit", "value": "10"}] }
+          }
+        },
+        {
+          "name": "Submit Recommendation Feedback",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Authorization", "value": "Bearer {{access_token}}" },
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"item_id\": \"ITEM_ID_HERE\",\n  \"item_type\": \"resource\",\n  \"feedback\": \"useful\",\n  \"title\": \"Quantum Computing Principles\"\n}"
+            },
+            "url": { "raw": "{{base_url}}/api/recommendations", "host": ["{{base_url}}"], "path": ["api", "recommendations"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "7. Privacy & Cryptography",
+      "item": [
+        {
+          "name": "Get Cryptographic Status",
+          "request": {
+            "method": "GET",
+            "header": [
+              { "key": "Authorization", "value": "Bearer {{access_token}}" }
+            ],
+            "url": { "raw": "{{base_url}}/api/privacy/status", "host": ["{{base_url}}"], "path": ["api", "privacy", "status"] }
+          }
+        },
+        {
+          "name": "Simulate Privacy Operation",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Authorization", "value": "Bearer {{access_token}}" },
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"operation_type\": \"HE_NOISE_PERTURBATION\",\n  \"vector\": [0.85, 0.92, 0.76],\n  \"epsilon\": 0.5,\n  \"noise_scale\": 0.05\n}"
+            },
+            "url": { "raw": "{{base_url}}/api/privacy/operations/simulate", "host": ["{{base_url}}"], "path": ["api", "privacy", "operations", "simulate"] }
+          }
+        },
+        {
+          "name": "Get Privacy Operations Audit",
+          "request": {
+            "method": "GET",
+            "header": [
+              { "key": "Authorization", "value": "Bearer {{access_token}}" }
+            ],
+            "url": { "raw": "{{base_url}}/api/privacy/operations?limit=20", "host": ["{{base_url}}"], "path": ["api", "privacy", "operations"], "query": [{"key": "limit", "value": "20"}] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "8. Admin Control Center",
+      "item": [
+        {
+          "name": "Get System Overview",
+          "request": {
+            "method": "GET",
+            "header": [
+              { "key": "Authorization", "value": "Bearer {{access_token}}" }
+            ],
+            "url": { "raw": "{{base_url}}/api/admin/overview", "host": ["{{base_url}}"], "path": ["api", "admin", "overview"] }
+          }
+        },
+        {
+          "name": "Get System & Security Status",
+          "request": {
+            "method": "GET",
+            "header": [
+              { "key": "Authorization", "value": "Bearer {{access_token}}" }
+            ],
+            "url": { "raw": "{{base_url}}/api/admin/system-status", "host": ["{{base_url}}"], "path": ["api", "admin", "system-status"] }
+          }
+        },
+        {
+          "name": "Get Audit Trail",
+          "request": {
+            "method": "GET",
+            "header": [
+              { "key": "Authorization", "value": "Bearer {{access_token}}" }
+            ],
+            "url": { "raw": "{{base_url}}/api/admin/audit-logs?limit=50", "host": ["{{base_url}}"], "path": ["api", "admin", "audit-logs"], "query": [{"key": "limit", "value": "50"}] }
+          }
+        }
+      ]
+    }
+  ]
+}

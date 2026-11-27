@@ -1,0 +1,97 @@
+[
+  {
+    "id": "srv_counseling_01",
+    "_id": "srv_counseling_01",
+    "name": "Confidential Psychological Counseling & Crisis Support",
+    "description": "Licensed campus clinical staff providing 1-on-1 confidential counseling, stress management, and 24/7 crisis hotlines.",
+    "category": "Student Support",
+    "contact_email": "confidential.wellness@university.edu",
+    "location": "Health Sciences Complex, Suite 320",
+    "hours": "Mon-Fri: 08:30 - 18:00 (24/7 on call)",
+    "confidentiality_tier": "High (Zero-Knowledge Intake)",
+    "is_active": true,
+    "tags": [
+      "Counseling",
+      "Mental Health",
+      "Confidential",
+      "Crisis Support"
+    ],
+    "created_at": "2026-11-21T13:35:45.687012"
+  },
+  {
+    "id": "srv_access_02",
+    "_id": "srv_access_02",
+    "name": "University Disability & Accessibility Services (UDAS)",
+    "description": "Academic accommodation plans, assistive software licenses, extended exam time coordination, and campus transit escorts.",
+    "category": "Student Support",
+    "contact_email": "accessibility@university.edu",
+    "location": "Student Center, Room 112",
+    "hours": "Mon-Fri: 09:00 - 17:00",
+    "confidentiality_tier": "Standard FERPA",
+    "is_active": true,
+    "tags": [
+      "Accessibility",
+      "Accommodations",
+      "Assistive Tech",
+      "Equity"
+    ],
+    "created_at": "2026-11-21T13:35:45.687012"
+  },
+  {
+    "id": "srv_library_carrels_03",
+    "_id": "srv_library_carrels_03",
+    "name": "Main Library Silent Research Carrels & Archive Access",
+    "description": "Reserve individual sound-isolated study carrels equipped with high-speed Ethernet and dual 4K monitors.",
+    "category": "Library Services",
+    "contact_email": "library.carrels@university.edu",
+    "location": "Main Research Library, Floors 4-6",
+    "hours": "Open 24 Hours with Student ID",
+    "confidentiality_tier": "Standard FERPA",
+    "is_active": true,
+    "tags": [
+      "Library",
+      "Quiet Study",
+      "Study Spaces",
+      "Monitors"
+    ],
+    "created_at": "2026-11-21T13:35:45.687012"
+  },
+  {
+    "id": "srv_tech_lending_04",
+    "_id": "srv_tech_lending_04",
+    "name": "Hardware Loaner Program & Technical Repair Depot",
+    "description": "Short-term loans of MacBook Pros, Linux ThinkPads, GPU compute nodes, graphing calculators, and free hardware diagnosis.",
+    "category": "Technical Support",
+    "contact_email": "tech.depot@university.edu",
+    "location": "Engineering Hall Basement, Lab B02",
+    "hours": "Mon-Fri: 10:00 - 16:00",
+    "confidentiality_tier": "Standard FERPA",
+    "is_active": true,
+    "tags": [
+      "Hardware Loaners",
+      "Laptops",
+      "Repairs",
+      "IT Support"
+    ],
+    "created_at": "2026-11-21T13:35:45.687012"
+  },
+  {
+    "id": "srv_career_coaching_05",
+    "_id": "srv_career_coaching_05",
+    "name": "Academic & Career Coaching Center",
+    "description": "1-on-1 resume reviews, mock behavioral and coding interview preparation, and graduate school application guidance.",
+    "category": "Career Guidance",
+    "contact_email": "career.coaching@university.edu",
+    "location": "Student Union, 2nd Floor",
+    "hours": "Mon-Thu: 09:00 - 18:00, Fri: 09:00 - 15:00",
+    "confidentiality_tier": "Standard FERPA",
+    "is_active": true,
+    "tags": [
+      "Career",
+      "Resume Review",
+      "Mock Interviews",
+      "Advising"
+    ],
+    "created_at": "2026-11-21T13:35:45.687012"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "pref_usr_student_01",
+    "user_id": "usr_student_01",
+    "share_department_with_recommender": true,
+    "collect_interaction_history": true,
+    "homomorphic_noise_scale": 0.05,
+    "differential_privacy_epsilon": 0.5,
+    "zero_knowledge_audit_logging": true,
+    "anonymize_bookmarks": true,
+    "last_consent_at": "2026-11-21T13:35:45.687012",
+    "updated_at": "2026-11-21T13:35:45.687012"
+  },
+  {
+    "id": "pref_usr_faculty_02",
+    "user_id": "usr_faculty_02",
+    "share_department_with_recommender": true,
+    "collect_interaction_history": true,
+    "homomorphic_noise_scale": 0.05,
+    "differential_privacy_epsilon": 0.5,
+    "zero_knowledge_audit_logging": true,
+    "anonymize_bookmarks": true,
+    "last_consent_at": "2026-11-21T13:35:45.687012",
+    "updated_at": "2026-11-21T13:35:45.687012"
+  },
+  {
+    "id": "pref_usr_staff_03",
+    "user_id": "usr_staff_03",
+    "share_department_with_recommender": true,
+    "collect_interaction_history": true,
+    "homomorphic_noise_scale": 0.05,
+    "differential_privacy_epsilon": 0.5,
+    "zero_knowledge_audit_logging": true,
+    "anonymize_bookmarks": true,
+    "last_consent_at": "2026-11-21T13:35:45.687012",
+    "updated_at": "2026-11-21T13:35:45.687012"
+  },
+  {
+    "id": "pref_usr_admin_04",
+    "user_id": "usr_admin_04",
+    "share_department_with_recommender": true,
+    "collect_interaction_history": true,
+    "homomorphic_noise_scale": 0.05,
+    "differential_privacy_epsilon": 0.5,
+    "zero_knowledge_audit_logging": true,
+    "anonymize_bookmarks": true,
+    "last_consent_at": "2026-11-21T13:35:45.687012",
+    "updated_at": "2026-11-21T13:35:45.687012"
+  },
+  {
+    "id": "pref_usr_5fec1adb7a",
+    "user_id": "usr_5fec1adb7a",
+    "share_department_with_recommender": true,
+    "collect_interaction_history": true,
+    "homomorphic_noise_scale": 0.05,
+    "differential_privacy_epsilon": 0.5,
+    "zero_knowledge_audit_logging": true,
+    "anonymize_bookmarks": true,
+    "last_consent_at": "2026-11-27T05:05:26.060908",
+    "updated_at": "2026-11-27T05:05:26.060908"
+  }
+]

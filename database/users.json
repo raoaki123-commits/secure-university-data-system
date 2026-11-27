@@ -1,0 +1,72 @@
+[
+  {
+    "id": "usr_student_01",
+    "name": "Alex Chen",
+    "full_name": "Alex Chen",
+    "email": "student.test@university.edu",
+    "role": "student",
+    "department": "Computer Science",
+    "account_status": "active",
+    "is_active": true,
+    "token_version": 1,
+    "created_at": "2026-11-21T13:35:45.687012",
+    "updated_at": "2026-11-27T05:36:45.277089",
+    "last_login": "2026-11-27T05:36:45.276090"
+  },
+  {
+    "id": "usr_faculty_02",
+    "name": "Prof. Marcus Vance",
+    "full_name": "Prof. Marcus Vance",
+    "email": "faculty.lead@university.edu",
+    "role": "faculty",
+    "department": "Computer Science",
+    "account_status": "active",
+    "is_active": true,
+    "token_version": 1,
+    "created_at": "2026-11-21T13:35:45.687012",
+    "updated_at": "2026-11-21T13:35:45.687012",
+    "last_login": null
+  },
+  {
+    "id": "usr_staff_03",
+    "name": "Sarah Jenkins",
+    "full_name": "Sarah Jenkins",
+    "email": "campus.staff@university.edu",
+    "role": "staff",
+    "department": "Student Affairs",
+    "account_status": "active",
+    "is_active": true,
+    "token_version": 1,
+    "created_at": "2026-11-21T13:35:45.687012",
+    "updated_at": "2026-11-21T13:35:45.687012",
+    "last_login": null
+  },
+  {
+    "id": "usr_admin_04",
+    "name": "Dr. Eleanor Vance",
+    "full_name": "Dr. Eleanor Vance",
+    "email": "root.admin@university.edu",
+    "role": "admin",
+    "department": "Information Security",
+    "account_status": "active",
+    "is_active": true,
+    "token_version": 1,
+    "created_at": "2026-11-21T13:35:45.687012",
+    "updated_at": "2026-11-27T05:36:45.622252",
+    "last_login": "2026-11-27T05:36:45.621253"
+  },
+  {
+    "id": "usr_5fec1adb7a",
+    "name": "akhi",
+    "full_name": "akhi",
+    "email": "2501730015@krmu.edu.in",
+    "role": "student",
+    "department": "Computer Science",
+    "account_status": "active",
+    "is_active": true,
+    "token_version": 1,
+    "created_at": "2026-11-27T05:05:26.060908",
+    "updated_at": "2026-11-27T05:05:26.060908",
+    "last_login": null
+  }
+]

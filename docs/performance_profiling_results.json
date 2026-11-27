@@ -1,0 +1,178 @@
+{
+  "project": "Secure Resource Recommendation System for University Communities",
+  "team_code": "2602233",
+  "timestamp_utc": "2026-11-15T15:56:48.029098+00:00",
+  "system_environment": {
+    "os": "win32",
+    "python_version": "3.12.0",
+    "tensorflow_available": true,
+    "tenseal_ckks_available": true
+  },
+  "api_endpoint_latencies": {
+    "GET /api/v1/auth/me": {
+      "samples": 30,
+      "p50_ms": 11.39,
+      "p95_ms": 118.28,
+      "min_ms": 5.22,
+      "max_ms": 141.5,
+      "mean_ms": 20.29,
+      "stddev_ms": 30.71
+    },
+    "GET /api/v1/resources": {
+      "samples": 30,
+      "p50_ms": 16.18,
+      "p95_ms": 19.37,
+      "min_ms": 9.9,
+      "max_ms": 109.68,
+      "mean_ms": 19.01,
+      "stddev_ms": 17.26
+    },
+    "GET /api/v1/events": {
+      "samples": 30,
+      "p50_ms": 6.5,
+      "p95_ms": 9.93,
+      "min_ms": 5.36,
+      "max_ms": 10.52,
+      "mean_ms": 7.19,
+      "stddev_ms": 1.44
+    },
+    "GET /api/v1/services": {
+      "samples": 30,
+      "p50_ms": 6.83,
+      "p95_ms": 8.63,
+      "min_ms": 5.99,
+      "max_ms": 8.78,
+      "mean_ms": 6.95,
+      "stddev_ms": 0.77
+    },
+    "GET /api/v1/privacy/status": {
+      "samples": 30,
+      "p50_ms": 5.99,
+      "p95_ms": 8.94,
+      "min_ms": 5.19,
+      "max_ms": 9.25,
+      "mean_ms": 6.38,
+      "stddev_ms": 1.14
+    },
+    "GET /api/v1/recommendations/student?engine=baseline": {
+      "samples": 30,
+      "p50_ms": 14.36,
+      "p95_ms": 16.49,
+      "min_ms": 12.96,
+      "max_ms": 16.89,
+      "mean_ms": 14.41,
+      "stddev_ms": 0.94
+    },
+    "GET /api/v1/recommendations/student?engine=hybrid": {
+      "samples": 30,
+      "p50_ms": 29.35,
+      "p95_ms": 146.58,
+      "min_ms": 24.85,
+      "max_ms": 152.28,
+      "mean_ms": 42.25,
+      "stddev_ms": 34.39
+    },
+    "GET /api/v1/admin/stats": {
+      "samples": 30,
+      "p50_ms": 9.93,
+      "p95_ms": 11.57,
+      "min_ms": 7.9,
+      "max_ms": 14.09,
+      "mean_ms": 9.89,
+      "stddev_ms": 1.22
+    }
+  },
+  "cryptography_benchmarks": {
+    "ckks_homomorphic_encryption": {
+      "vector_dimension": 16,
+      "scheme": "CKKS (TenSEAL / Microsoft SEAL)",
+      "poly_modulus_degree": 8192,
+      "encryption_time_ms": 24.838,
+      "oblivious_dot_product_time_ms": 29.953,
+      "decryption_time_ms": 5.68,
+      "ciphertext_size_bytes": 331621,
+      "expected_plaintext_dot": 4.15556,
+      "decrypted_homomorphic_dot": 4.15556,
+      "absolute_error": 3e-07,
+      "precision_relative_error": "1e-05%"
+    },
+    "mpc_3_party_beaver_triples": {
+      "protocol": "3-Party Additive Secret Sharing with Beaver Triples",
+      "secure_dot_product_p50_ms": 1.328,
+      "secure_dot_product_p95_ms": 3.228,
+      "cohort_aggregation_p50_ms": 0.53,
+      "cohort_aggregation_p95_ms": 1.331,
+      "zero_cleartext_guarantee": true
+    }
+  },
+  "recommendation_ml_benchmarks": {
+    "model_architecture": "Hybrid Neural CF (TensorFlow 2.x) + Content TF-IDF",
+    "inference_time_mean_ms": 13.23,
+    "inference_time_p50_ms": 13.07,
+    "inference_time_p95_ms": 15.51,
+    "items_ranked_count": 10,
+    "framework": "TensorFlow 2.x / Keras"
+  },
+  "database_indexing": {
+    "users": [
+      "_id_",
+      "email_1",
+      "role_1",
+      "account_status_1"
+    ],
+    "resources": [
+      "_id_",
+      "category_1",
+      "department_1",
+      "status_1",
+      "created_at_-1"
+    ],
+    "events": [
+      "_id_",
+      "date_1",
+      "category_1",
+      "status_1"
+    ],
+    "services": [
+      "_id_",
+      "category_1",
+      "is_active_1"
+    ],
+    "bookmarks": [
+      "_id_",
+      "user_id_1_item_id_1"
+    ],
+    "audit_logs": [
+      "_id_",
+      "timestamp_-1",
+      "action_1",
+      "admin_email_1"
+    ]
+  },
+  "memory_utilization": {
+    "current_heap_mb": 2.33,
+    "peak_heap_mb": 35.05
+  },
+  "frontend_bundle_metrics": {
+    "favicon.svg": {
+      "size_bytes": 9522,
+      "size_kb": 9.3
+    },
+    "icons.svg": {
+      "size_bytes": 5031,
+      "size_kb": 4.91
+    },
+    "index.html": {
+      "size_bytes": 1137,
+      "size_kb": 1.11
+    },
+    "assets\\index-BIS4Ri4H.js": {
+      "size_bytes": 1305790,
+      "size_kb": 1275.19
+    },
+    "assets\\index-COTJ90CG.css": {
+      "size_bytes": 44285,
+      "size_kb": 43.25
+    }
+  }
+}
